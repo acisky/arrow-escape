@@ -20,6 +20,9 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: Create ad_secrets.dart from example
+        run: cp lib/core/ad_secrets_example.dart lib/core/ad_secrets.dart
+
       - name: Install dependencies
         run: flutter pub get
 
